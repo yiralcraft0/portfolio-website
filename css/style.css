@@ -24,20 +24,17 @@ header {
     border: 2px solid black;
     border-radius: 20px;
     background-color: rgb(9, 19, 37);
-      box-shadow: 0px 0px 15px #372770;
+    box-shadow: 0px 0px 15px #372770;
+    padding: 15px;
 }
 
 .navbar {
     background: rgb(9, 19, 37);
-    /* border: .2vw solid #7d83a9; */
     height: 60px;
     display: flex;
     border-radius: 20px;
-    /* position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px; */
-   /*  box-shadow: 0 5px 10px rgb(106, 122, 161); */
+    margin-bottom: 10px;
+
 }
 
 .navbar ul {
@@ -51,7 +48,6 @@ header {
 .nav_contant {
     display: inline;
     text-decoration: none;
-    margin: 5px;
     display: flex;
     margin-right: 10px;
     padding: 5px;
@@ -95,14 +91,14 @@ header {
     height: fit-content;
 }
 
-.notLogo:hover {
+/* .notLogo:hover {
     a {
         transform: scale(1.2);
     }
 
     border-radius: 15px;
     background-color: #303054;
-}
+} */
 
 
 .aboutme{
@@ -114,6 +110,8 @@ header {
     display: flex;
     flex-grow: 1;
     box-shadow: 0px -1px 10px #6047bd;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
 .aboutme-text{
@@ -214,25 +212,21 @@ header {
     top: 8px;
 }
 
-
-.aboutme-image{
-    height: 380px;/* w= 387.017 h=436  */
-    margin: 0px 50px 0px 0px;
-    width: 386px;
+.aboutme-image {
+    width: 40%;
+    height: 364px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: end;
 }
-.aboutme-image img{
-    margin-top: 14px;
+.aboutme-image div{
+    margin: 0px auto 0px 0px;
+    position: relative;
+    top: 6px;
 }
-.aboutme-image img::before{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    border-radius:50%;
-    background:rgba(123,97,255,.3);
-    filter:blur(100px);
+.aboutme-image div img{
+    width: 300px;
+    height: fit-content;
 }
 
 
