@@ -308,7 +308,7 @@ main {
 .aboutme-header::before {
     content: '';
     background-color: #6f51d6;
-    height: 1px;
+    height: 2px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -318,7 +318,7 @@ main {
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     gap: 25px;
 }
 
@@ -329,7 +329,6 @@ main {
     padding: 15px;
     position: relative;
     border: 2px solid rgba(0, 242, 255, 0.3);
-    border-radius: 8px;
     z-index: 1;
 }
 
@@ -349,7 +348,7 @@ main {
     margin: 5px;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: center; */
     align-items: center;
     position: relative;
 
@@ -358,6 +357,7 @@ main {
         border: 2px solid #1b1c3c;
         height: 55px;
         margin: 10px;
+        margin-right: 20px;
         padding: 5px;
         box-shadow: 0px 0px 10px #7d42fa;
         filter: drop-shadow(0 0 15px #7d42fa);
@@ -372,7 +372,7 @@ main {
 .aboutme-jurney-header::before {
     content: '';
     background-color: #6f51d6;
-    height: 1px;
+    height: 2px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -381,9 +381,6 @@ main {
 }
 
 .aboutme-jurney-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 10px;
     padding: 5px;
@@ -403,7 +400,6 @@ main {
         position: absolute;
         top: 10px;
         left: -15px;
-        /* box-shadow: 0px 0px 10px; */
 
     }
 }
@@ -412,6 +408,8 @@ main {
     p {
         letter-spacing: 2px;
         line-height: 1.5rem;
+        font-size: 20px;
+        margin: 15px;
     }
 }
 
@@ -431,7 +429,6 @@ main {
     position: relative;
     overflow: hidden;
     border: 2px solid rgba(0, 242, 255, 0.3);
-    border-radius: 8px;
     z-index: 1;
 }
 
@@ -477,7 +474,7 @@ main {
 .aboutme-card-header::before {
     content: '';
     background-color: #6f51d6;
-    height: 1px;
+    height: 2px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -486,10 +483,6 @@ main {
 }
 
 .aboutme-card-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     ul {
         li {
             margin: 8px;
@@ -500,6 +493,53 @@ main {
     ;
 }
 
+.tech-stack-container {
+    display: flex;
+
+
+    .tech-stack-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 20px 0 20px;
+        padding: 10px;
+        border: 2px solid rgba(0, 242, 255, 0.3);
+        background-color: rgba(115, 84, 241, 0.1);
+        border-radius: 20px;
+        width: 100%;
+
+        img {
+            height: 40px;
+        }
+
+        h5 {
+            font-family: "Chelsea Market", system-ui;
+            margin-top: 10px;
+            padding: 10px;
+            position: relative;
+        }
+
+        h5::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            background-color: #6f51d6;
+            width: 0px;
+            height: 3px;
+            transition: .3s ease-in-out;
+        }
+
+
+    }
+}
+
+.tech-stack-item:hover {
+    h5::before {
+        width: 100%;
+    }
+}
 
 /* ==============FOOTER============== */
 
