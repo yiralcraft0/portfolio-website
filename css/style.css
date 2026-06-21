@@ -6,9 +6,12 @@
 /*     font-family: "Iosevka Charon", monospace; */
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap");
 /* font-family: "Bitcount Single", system-ui; */
-
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* font-family: "Lobster Two", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Prompt", sans-serif; */
+
+
 
 * {
     margin: 0;
@@ -75,7 +78,7 @@ header {
     background-color: rgb(115, 84, 241);
     bottom: 0;
     left: 0;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .notLogo a::before {
@@ -85,7 +88,7 @@ header {
     position: absolute;
     background-color: rgb(115, 84, 241);
     bottom: 0;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
     right: 0;
 }
 
@@ -540,6 +543,96 @@ main {
         width: 100%;
     }
 }
+
+/* ==============PROJECT FEATURE============== */
+.featured-projects-container {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.featured-projects {
+    background-color: rgb(77, 218, 105);
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 550px;
+}
+
+#scan-line {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bezel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.featured-projects-content {
+    font-family: "Prompt", sans-serif;
+    color: rgb(153, 255, 0);
+    position: absolute;
+    /* margin: 100px; */
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+
+    .projects-content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        margin: 10px;
+        padding: 5px;
+        font-size: 25px;
+        font-family: "Bitcount Single", system-ui;
+
+    }
+
+    .projects-content-header::before {
+        content: '';
+        background-color: greenyellow;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0px 0px 10px;
+    }
+
+}
+
+.projects-content-body {
+    align-self: flex-start;
+}
+
+.projects-content-help {
+    input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: rgb(153, 255, 0);
+        font-family: "Prompt", sans-serif;
+    }
+
+
+}
+
+
+
+
+
+
+
+
 
 /* ==============FOOTER============== */
 
