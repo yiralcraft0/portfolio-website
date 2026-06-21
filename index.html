@@ -33,16 +33,16 @@
                         Priyanshus<span>.dev</span></a>
                 </li>
                 <li class="nav_contant notLogo">
-                    <a href="http://" target="_blank">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li class="nav_contant notLogo">
-                    <a href="http://" target="_blank">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="nav_contant notLogo">
-                    <a href="http://" target="_blank">Projects</a>
+                    <a href="#project">Projects</a>
                 </li>
                 <li class="nav_contant notLogo">
-                    <a href="http://" target="_blank">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li class="nav_contant">
                     <img src="assets\media\open-arrow.svg" alt="open-arrow" class="open-arrow" />
@@ -52,7 +52,7 @@
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <section class="hero">
                 <div class="hero-text">
                     <div>
@@ -101,7 +101,7 @@
                 </div>
             </section>
         </section>
-        <search class="aboutme">
+        <search class="aboutme" id="about">
             <div class="aboutme-header">
                 <h1>ABOUT ME</h1>
                 <p>Here's a quick glimpse into who I am and what I do.</p>
@@ -209,53 +209,139 @@
                             </div>
                         </div>
                         <section class="tech-stack-container">
-                            <div class="tech-stack-item">
+                            <div class="tech-stack-item" id="stackPython">
                                 <img src="assets/media/Python-logo.svg" alt="">
                                 <h5>Python</h5>
                             </div>
-                            <div class="tech-stack-item">
+                            <div class="tech-stack-item" id="stackJava">
                                 <img src="assets/media/java-logo.svg" alt="">
                                 <h5>Java</h5>
                             </div>
-                            <div class="tech-stack-item">
+                            <div class="tech-stack-item" id="stackHTML">
                                 <img src="assets/media/html-logo.svg" alt="">
                                 <h5>HTML</h5>
                             </div>
-                            <div class="tech-stack-item">
+                            <div class="tech-stack-item" id="stackCSS">
                                 <img src="assets/media/css-logo.svg" alt="">
                                 <h5>CSS</h5>
                             </div>
-                            <div class="tech-stack-item">
+                            <div class="tech-stack-item" id="stackJS">
                                 <img src="assets/media/js-logo.svg" alt="">
                                 <h5>JS</h5>
                             </div>
-                            <div class="tech-stack-item">
+                            <div class="tech-stack-item" id="stackAndriod">
                                 <img src="assets/media/android-logo.svg" alt="">
                                 <h5>Android</h5>
                             </div>
-                            <div class="tech-stack-item">
+                            <div class="tech-stack-item" id="stackGithub">
                                 <img src="assets/media/GitHub-Logo.svg" alt="" style="background-color: white;
                                         border-radius: 10px;">
                                 <h5>GitHub</h5>
+                            </div>
+                        </section>
+                        <section class="tech-stack-learning-display">
+                            <p>Learned:</p>
+                            <p id="techDisplayNumber">0%</p>
+                            <div class="techDisplay">
+                                <div id="techDisplayBar"></div>
                             </div>
                         </section>
                     </section>
                 </section>
             </div>
         </search>
-        <section class="featured-projects-container">
+        <section class="featured-projects-container" id="project">
             <div class="featured-projects">
                 <img src="assets/images/scanlines.png" alt="Scan Line img" id="scan-line">
                 <img src="assets/images/bezel.png" alt="Bezel Screen img" id="bezel">
                 <div class="featured-projects-content">
-                        <div class="projects-content-header">
-                            <p>&ltMT-PROJECTS.exe/&gt</p>
-                            <p>--View my project--</p>
-                        </div>
+                    <div class="projects-content-header">
+                        <p>&ltMY-PROJECTS.exe/&gt</p>
+                        <p>--View-My-Projects--</p>
+                    </div>
                     <div class="projects-content-body">
-                        <div class="projects-content-help">
-                            <p>->Type help to see avalible command...</p>
-                            <p>C:/user/yiralcraft$&gt <input type="text" name="" id=""></p>
+                        <div class="projects-content-list">
+                            <p>C:/user/yiralcraft$&gt <input name="" id="projectsContentInput"></input></p>
+                            <p id="loadingText" style="display: none;">Loading</p>
+                            <ul id="projectsContentOutput">
+                                <li onclick="openDayCraftApp()">-> DayCraft-App</li>
+                                <li >-> PassWord-Manager</li>
+                                <li>-> Voice-Controll-Bot</li>
+                                <li>-> Calculator-App</li>
+                                <li>-> My-Portfolio-Website</li>
+                            </ul>
+                        </div>
+                        <div class="projects-content-status">
+                            <div class="projects-content-status-container" id="projectsDayCraft">
+                                <div class="projects-content-status-header">
+                                    DayCraft App
+                                </div>
+                                <div class="projects-content-status-info">
+                                    <p>● Type : Android App</p>
+                                    <p>● Language : Java , XML</p>
+                                    <p>● Database : SQLite</p>
+                                    <p>● Status : 75% Completed</p>
+                                    <p>Still Working on more function and Design</p>
+                                    <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
+                                            info -> GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="projects-content-status-container" id="projectsDayCraft">
+                                <div class="projects-content-status-header">
+                                    PassWord Manager
+                                </div>
+                                <div class="projects-content-status-info">
+                                    <p>● Type : Android App</p>
+                                    <p>● Language : Java , XML</p>
+                                    <p>● Database : SQLite</p>
+                                    <p>● Status : 75% Completed</p>
+                                    <p>Still Working on more function and Design</p>
+                                    <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
+                                            info -> GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="projects-content-status-container" id="projectsDayCraft">
+                                <div class="projects-content-status-header">
+                                    Voice Controll Bot
+                                </div>
+                                <div class="projects-content-status-info">
+                                    <p>● Type : Android App</p>
+                                    <p>● Language : Java , XML</p>
+                                    <p>● Database : SQLite</p>
+                                    <p>● Status : 75% Completed</p>
+                                    <p>Still Working on more function and Design</p>
+                                    <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
+                                            info -> GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="projects-content-status-container" id="projectsDayCraft">
+                                <div class="projects-content-status-header">
+                                    Calculator App
+                                </div>
+                                <div class="projects-content-status-info">
+                                    <p>● Type : Android App</p>
+                                    <p>● Language : Java , XML</p>
+                                    <p>● Database : SQLite</p>
+                                    <p>● Status : 75% Completed</p>
+                                    <p>Still Working on more function and Design</p>
+                                    <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
+                                            info -> GitHub</a></p>
+                                </div>
+                                <div class="projects-content-status-container" id="projectsDayCraft">
+                                    <div class="projects-content-status-header">
+                                        My Portfolio Website
+                                    </div>
+                                    <div class="projects-content-status-info">
+                                        <p>● Type : Android App</p>
+                                        <p>● Language : Java , XML</p>
+                                        <p>● Database : SQLite</p>
+                                        <p>● Status : 75% Completed</p>
+                                        <p>Still Working on more function and Design</p>
+                                        <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
+                                                info -> GitHub</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -263,7 +349,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         <section class="connect-sec">
             <img src="assets/media/mail.svg" alt="" class="connect-img" />
             <section class="connect-text">
@@ -304,10 +390,10 @@
         <hr />
         <section class="footer-sec">
             <p>©2026 Priyanshu.dev 🟢 Built with 💗 using HTML, CSS & JavaScript</p>
-            <button><img src="assets/media/up-arrow.svg" alt="" /></button>
+            <button><a href="#home"><img src="assets/media/up-arrow.svg" alt="" /></a></button>
         </section>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
