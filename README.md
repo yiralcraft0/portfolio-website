@@ -1,66 +1,110 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Priyanshu's Portfolio Website
 
 Welcome to my personal portfolio website repository!
 
-This project is being built to showcase my skills, projects, learning journey, and experiences as an aspiring software developer.
+This portfolio serves as my digital space to showcase my projects, skills, learning journey, and passion for software development.
+
+## 🚀 Live Website
+
+🔗 **Portfolio:** [ https://yiralcraft0.github.io/portfolio-website/ ]
 
 ## 👨‍💻 About Me
 
-Hi, I'm **Priyanshu**.
+Hi, I'm **Priyanshu** (AKA **Yiralcraft**).
 
-I'm passionate about programming, Android development, web development, and problem-solving. I enjoy building projects that help me learn new technologies and improve my development skills.
+I'm an aspiring software developer passionate about programming, Android development, web technologies, and problem-solving. I enjoy building projects that challenge me, expand my knowledge, and help me grow as a developer.
 
-## 🚀 Features
+Currently, I'm preparing to begin my B.Tech journey while continuously learning and building projects.
 
-* Modern and responsive design
-* About Me section
-* Skills showcase
-* Project portfolio
-* GitHub integration
-* Contact section
-* Mobile-friendly layout
-* Dark/Light mode (planned)
+---
 
-## 🛠️ Technologies
+## ✨ Portfolio Features
+
+* 🎨 Modern dark-themed UI
+* 📱 Fully responsive design
+* 🧑 About Me section
+* 🛠 Interactive Tech Stack showcase
+* 📊 Dynamic skill progress display
+* 💻 Retro terminal-inspired Projects Explorer
+* 📂 Featured project collection
+* 📬 Contact section
+* 🔗 GitHub & LinkedIn integration
+* 🚀 GitHub Pages deployment
+
+---
+
+## 🛠 Technologies Used
+
+### Frontend
 
 * HTML5
 * CSS3
 * JavaScript
-* Git & GitHub
 
-## 📂 Project Status
+### Tools
 
-🚧 Currently under development.
+* Git
+* GitHub
+* GitHub Pages
+* VS Code
 
-New features, improvements, and project showcases will be added regularly.
+---
 
-## 🎯 Goals
+## 📂 Featured Projects
 
-This portfolio aims to:
+### 📱 DayCraft
 
-* Showcase my technical skills
-* Highlight my projects
-* Track my learning journey
-* Create a professional online presence
+A native Android To-Do List application built using Java.
 
-## 📌 Featured Projects
+### 🧮 Calculator App
 
-Projects will be added as the portfolio develops.
+A lightweight calculator application focused on usability and functionality.
 
-Some current projects include:
+### 🔐 Password Manager
 
-* DayCraft (Android To-Do List App)
-* Calculator App
-* Password Manager
+A project designed to securely manage and organize passwords.
+
+### 🎙 Voice Control Bot
+
+A Python-based voice assistant capable of executing commands and automating tasks.
+
+### 🌐 Portfolio Website
+
+The website you're currently viewing.
+
+---
+
+## 🎯 Current Learning Focus
+
+* Android Development (Java)
+* Data Structures & Algorithms
+* Web Development
+* Problem Solving
+* UI/UX Design
+
+---
 
 ## 📫 Connect With Me
 
-* GitHub: [https://github.com/yiralcraft0]
-* LinkedIn: [https://www.linkedin.com/in/priyanshu-kumar-4b7943410/]
+### GitHub
+
+https://github.com/yiralcraft0
+
+### LinkedIn
+
+https://www.linkedin.com/in/priyanshu-kumar-4b7943410/
+
+### Email
+
+[yiralcraft0@gmail.com](mailto:yiralcraft0@gmail.com)
+
+---
 
 ## ⭐ Support
 
-If you like this project, consider giving it a star and following my development journey.
+If you like this project, consider giving the repository a star ⭐.
+
+Feedback, suggestions, and contributions are always welcome!
 
 ---
 
