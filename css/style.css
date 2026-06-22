@@ -1077,6 +1077,9 @@ footer {
         padding: 10px;
         /* display: none; */
     }
+    .projects-content-status-info{
+        font-size: 16px !important;
+    }
 
     .featured-projects {
         min-height: 924px;
