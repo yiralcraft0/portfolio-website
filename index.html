@@ -24,14 +24,14 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="nav_contant nav_title">
+                <a href="http://" class="atitle">
+                    <img src="../portfolio-website\assets\media\logo.svg" alt="" />
+                    <span class="logo-Spam">Priyanshus</span>
+                </a>
+            </div>
             <ul>
-                <li class="nav_contant">
-                    <a href="http://" class="atitle">
-                        <span class="logo-Spam">
-                            <img src="../portfolio-website\assets\media\logo.svg" alt="" />
-                        </span>
-                        Priyanshus<span>.dev</span></a>
-                </li>
+
                 <li class="nav_contant notLogo">
                     <a href="#home">Home</a>
                 </li>
@@ -44,10 +44,13 @@
                 <li class="nav_contant notLogo">
                     <a href="#contact">Contact</a>
                 </li>
-                <li class="nav_contant">
+                <li class="nav_contant" >
                     <img src="assets\media\open-arrow.svg" alt="open-arrow" class="open-arrow" />
                 </li>
             </ul>
+            <div id="openArrow">
+                <img src="assets\media\open-arrow.svg" alt="open-arrow" class="open-arrow" />
+            </div>
         </nav>
     </header>
 
@@ -177,7 +180,7 @@
                         <div class="aboutme-jurney-content aboutme-card-list">
                             <ul>
                                 <li>Programming</li>
-                                <li>Physecs & Science</li>
+                                <li>Physics & Science</li>
                                 <li>Gaming</li>
                                 <li>Technology</li>
                             </ul>
@@ -233,10 +236,9 @@
                                 <img src="assets/media/android-logo.svg" alt="">
                                 <h5>Android</h5>
                             </div>
-                            <div class="tech-stack-item" id="stackGithub">
-                                <img src="assets/media/GitHub-Logo.svg" alt="" style="background-color: white;
-                                        border-radius: 10px;">
-                                <h5>GitHub</h5>
+                            <div class="tech-stack-item" id="stackDSA">
+                                <img src="assets/media/dsa-logo.svg" alt="" ; border-radius: 10px;">
+                                <h5>DSA</h5>
                             </div>
                         </section>
                         <section class="tech-stack-learning-display">
@@ -261,24 +263,25 @@
                     </div>
                     <div class="projects-content-body">
                         <div class="projects-content-list">
-                            <p>C:/user/yiralcraft$&gt <input name="" id="projectsContentInput"></input></p>
+                            <p>Type `ls` for Projects</p>
+                            <p>C:/user/yiralcraft$&gt<input name="" id="projectsContentInput"></p>
                             <p id="loadingText" style="display: none;">Loading</p>
                             <ul id="projectsContentOutput">
-                                <li onclick="openDayCraftApp()">-> DayCraft-App</li>
-                                <li >-> PassWord-Manager</li>
-                                <li>-> Voice-Controll-Bot</li>
-                                <li>-> Calculator-App</li>
-                                <li>-> My-Portfolio-Website</li>
+                                <li onclick="openProject('projectsDayCraft')">-> DayCraft-App</li>
+                                <li onclick="openProject('projectsPasManager')">-> PassWord-Manager</li>
+                                <li onclick="openProject('projectsBot')">-> Voice-Controll-Bot</li>
+                                <li onclick="openProject('projectsCalc')">-> Calculator-App</li>
+                                <li onclick="openProject('projectsPotfolio')">-> My-Portfolio-Website</li>
                             </ul>
                         </div>
+
                         <div class="projects-content-status">
-                            <div class="projects-content-status-container" id="projectsDayCraft">
-                                <div class="projects-content-status-header">
-                                    DayCraft App
-                                </div>
+                            <div class="projects-content-status-container" id="projectsDayCraft" style="display: none;">
+                                <div class="projects-content-status-header">DayCraft App</div>
                                 <div class="projects-content-status-info">
                                     <p>● Type : Android App</p>
                                     <p>● Language : Java , XML</p>
+                                    <p>● Work : ToDo App</p>
                                     <p>● Database : SQLite</p>
                                     <p>● Status : 75% Completed</p>
                                     <p>Still Working on more function and Design</p>
@@ -286,60 +289,57 @@
                                             info -> GitHub</a></p>
                                 </div>
                             </div>
-                            <div class="projects-content-status-container" id="projectsDayCraft">
-                                <div class="projects-content-status-header">
-                                    PassWord Manager
-                                </div>
+
+                            <div class="projects-content-status-container" id="projectsPasManager"
+                                style="display: none;">
+                                <div class="projects-content-status-header">PassWord Manager</div>
                                 <div class="projects-content-status-info">
-                                    <p>● Type : Android App</p>
-                                    <p>● Language : Java , XML</p>
-                                    <p>● Database : SQLite</p>
-                                    <p>● Status : 75% Completed</p>
-                                    <p>Still Working on more function and Design</p>
-                                    <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
+                                    <p>● Type : Python Program</p>
+                                    <p>● Language : Python , Python Modules</p>
+                                    <p>● Work : Encode and Decode Passwords</p>
+                                    <p>● Database : JSON Filing</p>
+                                    <p>● Status : 100% Completed</p>
+                                    <p><a href="https://github.com/yiralcraft0/Password_Manager" target="_blank">-> For
+                                            More info -> GitHub</a></p>
+                                </div>
+                            </div>
+
+                            <div class="projects-content-status-container" id="projectsBot" style="display: none;">
+                                <div class="projects-content-status-header">Voice Control Bot</div>
+                                <div class="projects-content-status-info">
+                                    <p>● Type : Python Program</p>
+                                    <p>● Language : Python, Python Modules/Lib</p>
+                                    <p>● Work : It Can Control Youtube By Voice Commands</p>
+                                    <p>● Database : Not Required</p>
+                                    <p>● Status : 60% Completed</p>
+                                    <p><a href="https://github.com/yiralcraft0/Voise-bot" target="_blank">-> For More
                                             info -> GitHub</a></p>
                                 </div>
                             </div>
-                            <div class="projects-content-status-container" id="projectsDayCraft">
-                                <div class="projects-content-status-header">
-                                    Voice Controll Bot
-                                </div>
+
+                            <div class="projects-content-status-container" id="projectsCalc" style="display: none;">
+                                <div class="projects-content-status-header">Calculator App</div>
                                 <div class="projects-content-status-info">
                                     <p>● Type : Android App</p>
-                                    <p>● Language : Java , XML</p>
-                                    <p>● Database : SQLite</p>
-                                    <p>● Status : 75% Completed</p>
+                                    <p>● Language : Python, KivyLang</p>
+                                    <p>● Work : To Calculate Maths Problem</p>
+                                    <p>● Database : Not Required</p>
+                                    <p>● Status : 100% Completed</p>
                                     <p>Still Working on more function and Design</p>
-                                    <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
-                                            info -> GitHub</a></p>
+                                    <p><a href="https://github.com/yiralcraft0/Calculator-App-Python" target="_blank">->
+                                            For More info -> GitHub</a></p>
                                 </div>
                             </div>
-                            <div class="projects-content-status-container" id="projectsDayCraft">
-                                <div class="projects-content-status-header">
-                                    Calculator App
-                                </div>
+                            <div class="projects-content-status-container" id="projectsPotfolio" style="display: none;">
+                                <div class="projects-content-status-header">Portfolio Website</div>
                                 <div class="projects-content-status-info">
-                                    <p>● Type : Android App</p>
-                                    <p>● Language : Java , XML</p>
-                                    <p>● Database : SQLite</p>
-                                    <p>● Status : 75% Completed</p>
-                                    <p>Still Working on more function and Design</p>
-                                    <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
-                                            info -> GitHub</a></p>
-                                </div>
-                                <div class="projects-content-status-container" id="projectsDayCraft">
-                                    <div class="projects-content-status-header">
-                                        My Portfolio Website
-                                    </div>
-                                    <div class="projects-content-status-info">
-                                        <p>● Type : Android App</p>
-                                        <p>● Language : Java , XML</p>
-                                        <p>● Database : SQLite</p>
-                                        <p>● Status : 75% Completed</p>
-                                        <p>Still Working on more function and Design</p>
-                                        <p><a href="https://github.com/yiralcraft0/DayCraft" target="_blank">-> For More
-                                                info -> GitHub</a></p>
-                                    </div>
+                                    <p>● Type : Web Page</p>
+                                    <p>● Language : HTML, CSS, JS</p>
+                                    <p>● Work : To Show Who I Am And My Projects</p>
+                                    <p>● Database : Not Required</p>
+                                    <p>● Status : 100% Completed</p>
+                                    <p><a href="https://github.com/yiralcraft0/portfolio-website" target="_blank">-> For
+                                            More info -> GitHub</a></p>
                                 </div>
                             </div>
                         </div>

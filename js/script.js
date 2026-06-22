@@ -14,7 +14,7 @@ const skills = [
     { id: "stackCSS", score: '90%' },
     { id: "stackJS", score: '20%' },
     { id: "stackAndriod", score: '60%' },
-    { id: "stackGithub", score: '80%' }
+    { id: "stackDSA", score: '20%' }
 ];
 
 skills.forEach(skill => {
@@ -66,7 +66,18 @@ projectsContentInput.addEventListener("keydown", function (event) {
     }
 });
 
-function openDayCraftApp(params) {
-    const projectsDayCraft = document.getElementById("projectsDayCraft")
-    projectsDayCraft.style.display = "Block" ;
+const projects = ["projectsDayCraft", "projectsPasManager", "projectsBot", "projectsCalc", "projectsPotfolio"];
+
+function openProject(selectedProjectID) {
+    projects.forEach(projectID => {
+        const projectElement = document.getElementById(projectID);
+        
+        if (projectElement) {
+            if (projectID === selectedProjectID) {
+                projectElement.style.display = "block"; // Show the selected project
+            } else {
+                projectElement.style.display = "none";  // Hide the others
+            }
+        }
+    });
 }

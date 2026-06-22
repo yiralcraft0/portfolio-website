@@ -47,12 +47,12 @@ header {
     background: rgb(9, 19, 37);
     height: 50px;
     display: flex;
+    justify-content: space-between;
     border-radius: 20px;
 }
 
 .navbar ul {
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -68,12 +68,33 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+.nav_title{
+    margin: 20px;
+    width: fit-content;
+    /* height: fit-content; */
+    padding: 0;
+}
+.atitle{
+    display: flex;
+    img{
+        height: 48px;
+        margin-right: 10px;
+    }
+    span{
+        font-family: "Black Ops One", system-ui;
+        font-size: 30px; 
+    }
+    span::after{
+        font-size: 22px;
+        content: '.dev';
+        color: rgb(111, 81, 214);
+    }
+    
+}
+/* ==============NAVBAR HOVER EFFECT============== */
 .notLogo {
     position: relative;
 }
-
-/* ==============NAVBAR HOVER EFFECT============== */
 .notLogo a::after {
     content: "";
     height: 5px;
@@ -128,32 +149,13 @@ header {
 .notLogo a:hover {
     color: rgba(255, 255, 255, 1);
 }
-
+#openArrow{
+    display: none;
+}
 /* ==============NAVBAR LOGO============== */
 .logo-Spam {
     position: relative;
     top: 6px;
-}
-
-.navbar ul li:first-child {
-    flex-grow: 2;
-    margin-left: 20px;
-    justify-content: start;
-}
-
-.navbar ul li:first-child a {
-    font-family: "Black Ops One", system-ui;
-    font-size: 30px;
-}
-
-.navbar ul li:first-child a span {
-    color: rgb(111, 81, 215);
-    font-size: 18px;
-}
-
-.open-arrow:hover {
-    transform: scale(1.2);
-    cursor: pointer;
 }
 
 /* ==============HERO SECTION============== */
@@ -823,4 +825,250 @@ footer {
             height: 40px;
         }
     }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
+    /* NAVBAR */
+    header {
+        padding: 10px;
+    }
+
+    .navbar {
+        height: auto;
+        display: flex;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .nav_contant {
+        width: auto;
+        margin: 5px;
+    }
+
+    .nav_contant a {
+        font-size: 16px;
+    }
+
+    #openArrow{
+        display:block;
+        position: relative;
+        top: 15px;
+        height: fit-content;
+        width: fit-content;
+    }
+    #openArrow:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text1 {
+        margin: 30px 10px 20px;
+    }
+
+    .hero-text2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        margin: 15px 10px;
+    }
+
+    .hero-text2-name1 {
+        font-size: 48px;
+        display: block;
+    }
+
+    .hero-text2-name2 {
+        position: static;
+        display: block;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .hero-text3 {
+        margin: 15px;
+        font-size: 16px;
+    }
+
+    .hero-tags {
+        justify-content: center;
+        margin: 20px 10px;
+    }
+
+    .hero-tag {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .hero-image {
+        width: 100%;
+        text-align: center;
+        top: 0;
+    }
+
+    .hero-image img {
+        width: 250px;
+        max-width: 100%;
+    }
+
+    /* MAIN */
+    main {
+        margin-top: 82px;
+    }
+
+    /* ABOUT SECTION */
+    .aboutme-header h1 {
+        font-size: 2rem;
+    }
+
+    .aboutme-header p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about-container {
+        grid-template-rows: auto;
+    }
+
+    .aboutme-jurney-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutme-jurney-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .aboutme-jurney-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .aboutme-jurney-para p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px;
+    }
+
+    /* CARDS */
+    .aboutme-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutme-card-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutme-card-header img {
+        margin-bottom: 10px;
+    }
+
+    /* TECH STACK */
+    .tech-stack-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-stack-item {
+        margin: 10px !important;
+        width: 120px !important;
+    }
+
+    .tech-stack-learning-display {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tech-stack-learning-display p {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    /* FEATURED PROJECTS */
+    .featured-projects-content {
+        padding: 35px;
+        padding-top: 54px;
+    }
+
+    .projects-content-header {
+        font-size: 20px !important;
+    }
+
+    .projects-content-body {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .projects-content-status {
+        padding: 10px;
+        /* display: none; */
+    }
+    .featured-projects{
+        min-height: 864px;
+    }
+
+    .projects-content-status-container .projects-content-status-header {
+        font-size: 24px;
+    }
+
+    /* CONNECT SECTION */
+    .connect-sec {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .connect-img {
+        height: 80px;
+    }
+
+    .connect-text h1 {
+        font-size: 36px;
+    }
+
+    .connect-text h2 {
+        margin-left: 0;
+    }
+
+    .connect-text p {
+        width: 100%;
+        max-width: 350px;
+        margin: 15px auto;
+    }
+
+    .connect-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .connect-link {
+        margin: 10px;
+    }
+
+    /* FOOTER */
+    .footer-sec {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-sec p {
+        font-size: 13px;
+    }
+
 }
