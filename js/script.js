@@ -5,6 +5,28 @@ const techDisplayBar = document.getElementById("techDisplayBar");
 const projectsContentInput = document.getElementById('projectsContentInput');
 const projectsContentOutput = document.getElementById('projectsContentOutput')
 const loadingElement = document.getElementById("loadingText");
+// For NavBar ------------------------------------------------------
+const openArrow = document.getElementById("openArrow");
+const weblogo = document.getElementById("weblogo");
+const phoneul = document.getElementById("phoneul");
+console.log(phoneul.style.display)
+
+openArrow.onclick = function() {
+    openArrow.style.position = "relative";
+    openArrow.style.top = "-10px";
+
+    if (phoneul.style.display === "none" || phoneul.style.display === "") {
+        // If hidden, show the menu and hide the logo
+        weblogo.style.display = "none";
+        phoneul.style.display = "flex";
+    } else {
+        // If already showing, hide the menu and show the logo
+        weblogo.style.display = "block";
+        phoneul.style.display = "none";
+    }
+};
+
+
 
 // Skills Tech code----------------------------------------
 const skills = [
@@ -81,3 +103,4 @@ function openProject(selectedProjectID) {
         }
     });
 }
+

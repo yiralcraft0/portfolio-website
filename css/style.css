@@ -51,11 +51,15 @@ header {
     border-radius: 20px;
 }
 
-.navbar ul {
+.ul1 {
     height: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.ul2 {
+    display: none;
 }
 
 .nav_contant {
@@ -68,33 +72,40 @@ header {
     justify-content: center;
     align-items: center;
 }
-.nav_title{
+
+.nav_title {
     margin: 20px;
     width: fit-content;
     /* height: fit-content; */
     padding: 0;
 }
-.atitle{
+
+.atitle {
     display: flex;
-    img{
+
+    img {
         height: 48px;
         margin-right: 10px;
     }
-    span{
+
+    span {
         font-family: "Black Ops One", system-ui;
-        font-size: 30px; 
+        font-size: 30px;
     }
-    span::after{
+
+    span::after {
         font-size: 22px;
         content: '.dev';
         color: rgb(111, 81, 214);
     }
-    
+
 }
+
 /* ==============NAVBAR HOVER EFFECT============== */
 .notLogo {
     position: relative;
 }
+
 .notLogo a::after {
     content: "";
     height: 5px;
@@ -149,9 +160,11 @@ header {
 .notLogo a:hover {
     color: rgba(255, 255, 255, 1);
 }
-#openArrow{
+
+#openArrow {
     display: none;
 }
+
 /* ==============NAVBAR LOGO============== */
 .logo-Spam {
     position: relative;
@@ -829,39 +842,85 @@ footer {
 
 /* ================= MOBILE RESPONSIVE ================= */
 @media screen and (max-width: 768px) {
+
     /* NAVBAR */
     header {
         padding: 10px;
+        height: 88px;
+        overflow: hidden;
     }
 
     .navbar {
         height: auto;
         display: flex;
+        margin: 10px;
+        
     }
 
-    .navbar ul {
+    .ul1 {
         display: none;
+
+    }
+
+    .ul2 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: "Bebas Neue", sans-serif;
+            }
+        }
+
+    }
+
+    .atitle {
+        span {
+            font-size: 24px;
+        }
+
+        img {
+            height: 40px;
+        }
     }
 
     .nav_contant {
-        width: auto;
+        position: relative;
+        left: -22px;
         margin: 5px;
+        /* display: none;  */
     }
 
     .nav_contant a {
         font-size: 16px;
     }
 
-    #openArrow{
-        display:block;
+    #openArrow {
+        display: block;
         position: relative;
-        top: 15px;
-        height: fit-content;
-        width: fit-content;
+
+        /* top: 15px; */
+        img {
+            position: relative;
+            top: 10px;
+        }
+
     }
+
     #openArrow:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+        transform: scale(1.2);
+        cursor: pointer;
     }
 
     /* HERO SECTION */
@@ -1018,8 +1077,9 @@ footer {
         padding: 10px;
         /* display: none; */
     }
-    .featured-projects{
-        min-height: 864px;
+
+    .featured-projects {
+        min-height: 924px;
     }
 
     .projects-content-status-container .projects-content-status-header {
