@@ -62,7 +62,7 @@ projectsContentInput.addEventListener("keydown", function (event) {
     if (event.key == 'Enter') {
         event.preventDefault(); // Stop default form submissions early
         
-        const commandValue = event.target.value; // Store value before input gets locked
+        const commandValue = event.target.value.toLowerCase(); // Store value before input gets locked
         let dotCount = 0;
 
         // Reset text and show the loader
