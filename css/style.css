@@ -854,6 +854,9 @@ footer {
         height: auto;
         display: flex;
         margin: 10px;
+        position: relative;
+        top: 10px;
+        transition: display 2s ease-in-out;
         
     }
 
@@ -878,7 +881,7 @@ footer {
             a {
                 color: white;
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 24px;
                 font-family: "Bebas Neue", sans-serif;
             }
         }
@@ -888,6 +891,7 @@ footer {
     .atitle {
         span {
             font-size: 24px;
+            position: relative;
         }
 
         img {
@@ -897,7 +901,8 @@ footer {
 
     .nav_contant {
         position: relative;
-        left: -22px;
+        bottom: 10px;
+        left: -20px;
         margin: 5px;
         /* display: none;  */
     }
@@ -909,11 +914,13 @@ footer {
     #openArrow {
         display: block;
         position: relative;
+        margin-right: 10px;
+        height: 30px;
 
         /* top: 15px; */
         img {
             position: relative;
-            top: 10px;
+            
         }
 
     }
@@ -1072,7 +1079,7 @@ footer {
     }
 
     .projects-content-status {
-        padding: 10px;
+        padding: 0px;
         /* display: none; */
     }
     .projects-content-status-info{

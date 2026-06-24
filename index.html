@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Google Font For Title -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +23,8 @@
 </head>
 
 <body>
+    <div>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav_contant nav_title" id="weblogo">
@@ -276,13 +279,15 @@
                             <p>Type `ls` for Projects</p>
                             <p>C:/user/yiralcraft$&gt<input name="" id="projectsContentInput"></p>
                             <p id="loadingText" style="display: none;">Loading</p>
+                            <p></p>
                             <ul id="projectsContentOutput">
                                 <li onclick="openProject('projectsDayCraft')">-> DayCraft-App</li>
                                 <li onclick="openProject('projectsPasManager')">-> PassWord-Manager</li>
-                                <li onclick="openProject('projectsBot')">-> Voice-Controll-Bot</li>
+                                <li onclick="openProject('projectsBot')">-> Voice-Control-Bot</li>
                                 <li onclick="openProject('projectsCalc')">-> Calculator-App</li>
                                 <li onclick="openProject('projectsPotfolio')">-> My-Portfolio-Website</li>
                             </ul>
+                            <p></p>
                         </div>
 
                         <div class="projects-content-status">
@@ -386,6 +391,12 @@
                     <div class="link-connect">
                         <a href="https://www.linkedin.com/in/priyanshu-kumar-4b7943410/" target="_blank">
                             <img src="assets/media/linkedin.svg" alt="" class="connect-link" />
+                        </a>
+                    </div>
+                    <div class="link-connect">
+                        <a href="https://discord.gg/zjevcYVAG" target="_blank">
+                            <img src="assets/media/discord.svg" alt="" class="connect-link"
+                            style="background-color: white; padding: 4px;" />
                         </a>
                     </div>
                 </div>

@@ -11,18 +11,20 @@ const weblogo = document.getElementById("weblogo");
 const phoneul = document.getElementById("phoneul");
 console.log(phoneul.style.display)
 
-openArrow.onclick = function() {
+openArrow.onclick = function () {
     openArrow.style.position = "relative";
-    openArrow.style.top = "-10px";
+
 
     if (phoneul.style.display === "none" || phoneul.style.display === "") {
         // If hidden, show the menu and hide the logo
         weblogo.style.display = "none";
-        phoneul.style.display = "flex";
+        phoneul.style.display = "flex";//
+        openArrow.style.rotate = '180deg';
     } else {
         // If already showing, hide the menu and show the logo
         weblogo.style.display = "block";
         phoneul.style.display = "none";
+        openArrow.style.rotate = '0deg';
     }
 };
 
@@ -61,7 +63,7 @@ projectsContentInput.addEventListener("keydown", function (event) {
 
     if (event.key == 'Enter') {
         event.preventDefault(); // Stop default form submissions early
-        
+
         const commandValue = event.target.value.toLowerCase(); // Store value before input gets locked
         let dotCount = 0;
 
@@ -72,7 +74,7 @@ projectsContentInput.addEventListener("keydown", function (event) {
         // Start the animation loop
         const loadingInterval = setInterval(() => {
             if (dotCount < 3) {
-                loadingElement.textContent += " ●"; 
+                loadingElement.textContent += " ●";
                 dotCount++;
             } else {
                 clearInterval(loadingInterval); // Stop the animation timer
@@ -82,6 +84,10 @@ projectsContentInput.addEventListener("keydown", function (event) {
                 if (commandValue === "ls") {
                     projectsContentOutput.style.display = 'block';
                     projectsContentInput.readOnly = true;
+                    loadingElement.nextElementSibling.style.display = "none";
+                } else {
+                    loadingElement.nextElementSibling.style.color = "Red";
+                    loadingElement.nextElementSibling.textContent = `'${commandValue}' is not recognized as a command`;
                 }
             }
         }, 500); // 500ms delay per dot (1.5 seconds total)
@@ -89,18 +95,46 @@ projectsContentInput.addEventListener("keydown", function (event) {
 });
 
 const projects = ["projectsDayCraft", "projectsPasManager", "projectsBot", "projectsCalc", "projectsPotfolio"];
-
-function openProject(selectedProjectID) {
-    projects.forEach(projectID => {
-        const projectElement = document.getElementById(projectID);
-        
-        if (projectElement) {
-            if (projectID === selectedProjectID) {
-                projectElement.style.display = "block"; // Show the selected project
-            } else {
-                projectElement.style.display = "none";  // Hide the others
-            }
-        }
-    });
+const projectIDsNames = {
+    "projectsDayCraft": "DayCraft-App",
+    "projectsPasManager": "PassWord-Manager",
+    "projectsBot": "Voice-Control-Bot",
+    "projectsCalc": "Calculator-App",
+    "projectsPotfolio": "My-Portfolio-Website"
 }
+function openProject(selectedProjectID) {
+    const projectName = projectIDsNames[selectedProjectID];
+    let charIndex = 0;
+    const baseText = "C:/user/yiralcraft$>";
+    const animateText = `open /${projectName}`;
+    projectsContentOutput.nextElementSibling.textContent = baseText;
+
+    // 1. Create a timed animation loop
+    const animation = setInterval(() => {
+        if (charIndex < animateText.length) {
+            projectsContentOutput.nextElementSibling.textContent += animateText[charIndex] ;
+            charIndex++;
+        } else {
+            // 2. STOP the interval immediately so it doesn't loop forever
+            clearInterval(animation);
+
+            // 3. Direct dictionary lookup (No loops needed!)
+            
+
+            if (projectName) {
+                projectsContentOutput.nextElementSibling.textContent = `C:/user/yiralcraft$>open /${projectName}`;
+            }
+
+            // 4. Toggle visibility of elements safely
+            projects.forEach(projectID => {
+                const projectElement = document.getElementById(projectID);
+                if (projectElement) {
+                    projectElement.style.display = (projectID === selectedProjectID) ? "block" : "none";
+                }
+            });
+        }
+    }, 150);
+}
+
+
 

@@ -1,0 +1,23 @@
+@keyframes heroTagsBGColor {
+    0% {
+        background-image: linear-gradient(to right, #4845ff, #6b2ef8);
+        box-shadow: 0px 0px 9px #6047bd;
+    }
+
+    25% {
+        background-image: linear-gradient(to bottom, #4845ff, #6b2ef8);
+    }
+
+    75% {
+        background-image: linear-gradient(to left, #4845ff, #6b2ef8);
+    }
+
+    100% {
+        background-image: linear-gradient(to top, #4845ff, #6b2ef8);
+        box-shadow: 0px 0px 9px #6047bd;
+    }
+}
+
+.hero-tag {
+    animation: heroTagsBGColor 5s infinite linear;
+}
